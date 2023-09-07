@@ -1,0 +1,90 @@
+/*reset.css*/
+/* RESETS */
+/* This file was created here for potential future usability with Webpack.
+It allows for usage of CSS pre-processors (like SCSS) or post-processors (like PostCSS).
+These stylings will create a background default and are imported in 'src/main.js'.
+Importing it at this level causes it to be automatically added in during the build step. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  font: 62.5% / 1.15 sans-serif;
+}
+h1,
+h2 {
+  margin-bottom: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  border: 0.2rem solid #999;;
+  border-radius: 5px;
+  margin: 0;
+  padding: 5px 15px 5px 15px;
+  width: auto;
+  overflow: visible;
+  background: white;
+  color: black;
+  font: inherit;
+  line-height: normal;
+  appearance: none;
+  box-shadow: 0 1.5px #666;
+
+}
+button:active {
+  background-color: white;
+  box-shadow: 0 2px #666;
+  transform: translateY(1px);
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+select:active {
+  background-color: #999;
+
+}
+button,
+input {
+  overflow: visible;
+}
+input[type="text"] {
+  border-radius: 0;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  font: 2rem/1.25 'Playfair Display';
+  background-image: url(../assets/Untitled_Artwork.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  color: black;
+}
+a:link {
+    color:black
+}
+a:visited {
+    color:black
+}
+@media screen and (min-width: 620px) {
+  body {
+    font-size: 1.9rem;
+    line-height: 1.31579;
+  }
+}
+/*END RESETS*/
